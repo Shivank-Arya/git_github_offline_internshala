@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Responsive Design - Blog</title>
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../article.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Home</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="article-date">March 15, 2026</span>
+                <span class="article-category">Design</span>
+                <span class="article-read-time">6 min read</span>
+            </div>
+            <h1 class="article-title">The Art of Responsive Design</h1>
+            <p class="article-description">Create websites that look perfect on any device</p>
+        </header>
+
+        <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+
+        <div class="article-content">
+            <h2>Why Responsive Design Matters</h2>
+            <p>With the increasing variety of devices and screen sizes, responsive design has become essential. Users access websites from smartphones, tablets, laptops, and large monitors. Your website must look great and function properly on all of them.</p>
+
+            <h2>Mobile-First Approach</h2>
+            <p>Modern web design starts with mobile. The mobile-first approach means designing for the smallest screen first, then progressively adding features for larger screens. This ensures your core content is accessible to everyone.</p>
+
+            <h2>Media Queries</h2>
+            <p>Media queries are CSS rules that apply different styles based on device characteristics. They're the foundation of responsive design:</p>
+            <ul>
+                <li>Screen width (min-width, max-width)</li>
+                <li>Device type (screen, print, etc.)</li>
+                <li>Orientation (portrait, landscape)</li>
+                <li>Pixel density (for retina displays)</li>
+            </ul>
+
+            <h2>Flexible Layouts</h2>
+            <p>Use flexible units instead of fixed pixels:</p>
+            <ul>
+                <li><strong>Percentages:</strong> Relative to parent element</li>
+                <li><strong>EM/REM:</strong> Relative to font size</li>
+                <li><strong>Viewport units:</strong> VW, VH for responsive typography</li>
+            </ul>
+
+            <h2>CSS Grid and Flexbox</h2>
+            <p>Modern layout systems make responsive design easier. CSS Grid and Flexbox allow you to create complex layouts that adapt to different screen sizes automatically.</p>
+
+            <h2>Responsive Images</h2>
+            <p>Images should also be responsive:</p>
+            <ul>
+                <li>Use max-width: 100% to prevent overflow</li>
+                <li>Use the &lt;picture&gt; element for different image sources</li>
+                <li>Optimize images for web to improve performance</li>
+                <li>Use srcset for different resolutions</li>
+            </ul>
+
+            <h2>Testing Your Responsive Design</h2>
+            <p>Always test your design on actual devices or emulators:</p>
+            <ol>
+                <li>Use Chrome DevTools for device emulation</li>
+                <li>Test on real smartphones and tablets</li>
+                <li>Test on different browsers</li>
+                <li>Test on different connection speeds</li>
+            </ol>
+
+            <h2>Common Breakpoints</h2>
+            <p>Here are typical screen size breakpoints:</p>
+            <ul>
+                <li>Mobile: 320px - 480px</li>
+                <li>Tablet: 481px - 768px</li>
+                <li>Small Desktop: 769px - 1024px</li>
+                <li>Large Desktop: 1025px+</li>
+            </ul>
+
+            <h2>Best Practices</h2>
+            <ul>
+                <li>Use a mobile-first approach</li>
+                <li>Test extensively on multiple devices</li>
+                <li>Keep navigation simple and accessible</li>
+                <li>Optimize images and assets</li>
+                <li>Use semantic HTML</li>
+                <li>Avoid fixed widths when possible</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Responsive design is no longer optional—it's a necessity. By following these principles and best practices, you'll create websites that work beautifully for all users, regardless of their device.</p>
+
+            <div class="article-navigation">
+                <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

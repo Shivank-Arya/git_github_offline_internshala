@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid vs Flexbox: When to Use What - Blog</title>
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../article.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Home</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="article-date">March 10, 2026</span>
+                <span class="article-category">Tips & Tricks</span>
+                <span class="article-read-time">6 min read</span>
+            </div>
+            <h1 class="article-title">CSS Grid vs Flexbox: When to Use What</h1>
+            <p class="article-description">Master the differences between these two powerful CSS layout tools</p>
+        </header>
+
+        <div class="article-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+
+        <div class="article-content">
+            <h2>Introduction</h2>
+            <p>CSS Grid and Flexbox are two powerful layout systems in modern CSS. Both can solve layout problems, but they're designed with different purposes in mind. Understanding when to use each one is crucial for writing efficient CSS.</p>
+
+            <h2>Flexbox Basics</h2>
+            <p>Flexbox is designed for one-dimensional layouts—either rows or columns:</p>
+            <ul>
+                <li>Works in a single direction (horizontal or vertical)</li>
+                <li>Perfect for components with a few items</li>
+                <li>Great for navigation menus, toolbars, and buttons</li>
+                <li>Automatically handles alignment and spacing</li>
+            </ul>
+
+            <h2>CSS Grid Basics</h2>
+            <p>CSS Grid is for two-dimensional layouts—both rows and columns simultaneously:</p>
+            <ul>
+                <li>Works in two dimensions</li>
+                <li>Perfect for page layouts and complex designs</li>
+                <li>Great for gallery layouts, form layouts, and website structure</li>
+                <li>Provides precise control over positioning</li>
+            </ul>
+
+            <h2>When to Use Flexbox</h2>
+            <p>Use Flexbox when:</p>
+            <ul>
+                <li>Arranging items in a single line (row or column)</li>
+                <li>You have a few items that need alignment</li>
+                <li>Building components like headers, navbars, or buttons</li>
+                <li>You want items to automatically wrap</li>
+                <li>You need simple alignment and spacing</li>
+                <li>Creating layouts that need to be responsive with wrapping</li>
+            </ul>
+
+            <h2>When to Use CSS Grid</h2>
+            <p>Use CSS Grid when:</p>
+            <ul>
+                <li>You need a complex layout with multiple rows and columns</li>
+                <li>Creating the main page structure</li>
+                <li>Building gallery or dashboard layouts</li>
+                <li>You need precise control over item placement</li>
+                <li>Creating form layouts with aligned inputs and labels</li>
+                <li>Combining multiple layout requirements</li>
+            </ul>
+
+            <h2>Real-World Examples</h2>
+            <h3>Use Flexbox for:</h3>
+            <ul>
+                <li>Navigation menus</li>
+                <li>Button groups</li>
+                <li>Search bars with icon and input</li>
+                <li>Card headers with title and actions</li>
+                <li>Breadcrumb navigation</li>
+            </ul>
+
+            <h3>Use CSS Grid for:</h3>
+            <ul>
+                <li>Website layout (header, sidebar, main, footer)</li>
+                <li>Image galleries</li>
+                <li>Magazine-style layouts</li>
+                <li>Dashboard panels</li>
+                <li>Product grids</li>
+            </ul>
+
+            <h2>Key Differences</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                <tr style="background: #f0f0f0;">
+                    <th style="padding: 0.5rem; text-align: left;">Feature</th>
+                    <th style="padding: 0.5rem; text-align: left;">Flexbox</th>
+                    <th style="padding: 0.5rem; text-align: left;">CSS Grid</th>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;"><strong>Dimensions</strong></td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">One (1D)</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Two (2D)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;"><strong>Direction</strong></td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Row or Column</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Both</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;"><strong>Learning Curve</strong></td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Easier</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Steeper</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;"><strong>Browser Support</strong></td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Excellent</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Very Good</td>
+                </tr>
+            </table>
+
+            <h2>Can You Use Both?</h2>
+            <p>Absolutely! Use them together in the same project. Many layouts benefit from a combination of both:</p>
+            <ul>
+                <li>Use CSS Grid for the main page layout</li>
+                <li>Use Flexbox within grid items for component layout</li>
+                <li>They complement each other perfectly</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Both CSS Grid and Flexbox are excellent tools. The key is understanding their strengths and using each appropriately. Start with Flexbox for simple one-dimensional layouts, and graduate to CSS Grid for complex two-dimensional designs. As you get more comfortable, you'll naturally develop intuition about which tool to use for each situation.</p>
+
+            <div class="article-navigation">
+                <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Security Best Practices - Blog</title>
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../article.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Home</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="article-date">March 5, 2026</span>
+                <span class="article-category">Security</span>
+                <span class="article-read-time">8 min read</span>
+            </div>
+            <h1 class="article-title">Web Security Best Practices</h1>
+            <p class="article-description">Protect your web applications from common security threats</p>
+        </header>
+
+        <div class="article-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+
+        <div class="article-content">
+            <h2>Why Web Security Matters</h2>
+            <p>With cyber attacks becoming increasingly sophisticated, web security is crucial. A single vulnerability can expose user data, damage your reputation, and have legal consequences. Every developer must understand and implement security best practices.</p>
+
+            <h2>HTTPS: Always Use It</h2>
+            <p>HTTPS encrypts data between the user's browser and your server:</p>
+            <ul>
+                <li>Protects sensitive information (passwords, credit cards)</li>
+                <li>Prevents man-in-the-middle attacks</li>
+                <li>Required by modern browsers for many features</li>
+                <li>Improves SEO ranking</li>
+                <li>Use Let's Encrypt for free SSL certificates</li>
+            </ul>
+
+            <h2>Cross-Site Scripting (XSS)</h2>
+            <p>XSS attacks inject malicious scripts into your website:</p>
+            <h3>Prevention:</h3>
+            <ul>
+                <li>Validate and sanitize all user input</li>
+                <li>Escape output when displaying user data</li>
+                <li>Use content security policy headers</li>
+                <li>Use trusted libraries for HTML sanitization</li>
+                <li>Keep dependencies updated</li>
+            </ul>
+
+            <h2>Cross-Site Request Forgery (CSRF)</h2>
+            <p>CSRF tricks users into making unwanted requests:</p>
+            <h3>Prevention:</h3>
+            <ul>
+                <li>Implement CSRF tokens in forms</li>
+                <li>Use the Same-Site attribute on cookies</li>
+                <li>Validate referrer headers</li>
+                <li>Use POST requests for state-changing operations</li>
+                <li>Implement proper session management</li>
+            </ul>
+
+            <h2>SQL Injection</h2>
+            <p>SQL injection is a code injection technique targeting databases:</p>
+            <h3>Prevention:</h3>
+            <ul>
+                <li>Use prepared statements and parameterized queries</li>
+                <li>Never concatenate user input into SQL queries</li>
+                <li>Use ORM frameworks</li>
+                <li>Validate input types</li>
+                <li>Use least privilege database accounts</li>
+            </ul>
+
+            <h2>Authentication Security</h2>
+            <p>Secure authentication is fundamental:</p>
+            <ul>
+                <li>Hash passwords with bcrypt or Argon2</li>
+                <li>Never store plain text passwords</li>
+                <li>Implement account lockout after failed attempts</li>
+                <li>Use multi-factor authentication (MFA)</li>
+                <li>Implement password reset securely</li>
+                <li>Session timeout for inactive users</li>
+            </ul>
+
+            <h2>API Security</h2>
+            <p>Secure your APIs from misuse:</p>
+            <ul>
+                <li>Require authentication for all endpoints</li>
+                <li>Implement rate limiting</li>
+                <li>Use API keys for public APIs</li>
+                <li>Validate request headers and content</li>
+                <li>Return minimal error information</li>
+                <li>Log all API access</li>
+            </ul>
+
+            <h2>Dependency Vulnerabilities</h2>
+            <p>Regularly update and audit your dependencies:</p>
+            <ul>
+                <li>Use npm audit to check for vulnerabilities</li>
+                <li>Keep frameworks and libraries updated</li>
+                <li>Remove unused dependencies</li>
+                <li>Use lock files to ensure consistency</li>
+                <li>Subscribe to security notifications</li>
+            </ul>
+
+            <h2>Security Headers</h2>
+            <p>Implement important HTTP headers:</p>
+            <ul>
+                <li><strong>Content-Security-Policy:</strong> Prevent XSS attacks</li>
+                <li><strong>X-Content-Type-Options:</strong> Prevent MIME type sniffing</li>
+                <li><strong>X-Frame-Options:</strong> Prevent clickjacking</li>
+                <li><strong>Strict-Transport-Security:</strong> Force HTTPS</li>
+                <li><strong>X-XSS-Protection:</strong> XSS protection</li>
+            </ul>
+
+            <h2>Input Validation</h2>
+            <p>Always validate and sanitize user input:</p>
+            <ul>
+                <li>Whitelist allowed characters</li>
+                <li>Check input length</li>
+                <li>Validate email and URL formats</li>
+                <li>Sanitize before displaying</li>
+                <li>Use type checking in backend languages</li>
+            </ul>
+
+            <h2>Logging and Monitoring</h2>
+            <p>Monitor your application for suspicious activity:</p>
+            <ul>
+                <li>Log failed login attempts</li>
+                <li>Log sensitive operations</li>
+                <li>Monitor error rates</li>
+                <li>Set up alerts for unusual patterns</li>
+                <li>Regularly review logs</li>
+            </ul>
+
+            <h2>Security Checklist</h2>
+            <ul>
+                <li>☐ Use HTTPS everywhere</li>
+                <li>☐ Validate all user input</li>
+                <li>☐ Implement CSRF protection</li>
+                <li>☐ Secure authentication</li>
+                <li>☐ Hash passwords securely</li>
+                <li>☐ Implement security headers</li>
+                <li>☐ Keep dependencies updated</li>
+                <li>☐ Use environment variables for secrets</li>
+                <li>☐ Implement rate limiting</li>
+                <li>☐ Log and monitor activity</li>
+            </ul>
+
+            <h2>Resources for Learning</h2>
+            <ul>
+                <li>OWASP Top 10: Common security vulnerabilities</li>
+                <li>OWASP Testing Guide: Comprehensive testing methodology</li>
+                <li>CWE/SANS Top 25: Most dangerous software errors</li>
+                <li>Security.txt: Responsible disclosure</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Web security is an ongoing process, not a destination. Stay informed about new threats and vulnerabilities, implement best practices consistently, and encourage security awareness in your team. Remember, security is everyone's responsibility.</p>
+
+            <div class="article-navigation">
+                <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

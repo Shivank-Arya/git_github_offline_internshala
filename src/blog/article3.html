@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 Features Explained - Blog</title>
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../article.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">Home</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="article-date">March 12, 2026</span>
+                <span class="article-category">JavaScript</span>
+                <span class="article-read-time">7 min read</span>
+            </div>
+            <h1 class="article-title">JavaScript ES6 Features Explained</h1>
+            <p class="article-description">Master modern JavaScript with these essential ES6 features</p>
+        </header>
+
+        <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+
+        <div class="article-content">
+            <h2>What is ES6?</h2>
+            <p>ES6 (ECMAScript 2015) introduced major improvements to JavaScript, making it more powerful and easier to use. These features have become standard in modern web development.</p>
+
+            <h2>Let and Const</h2>
+            <p>ES6 introduced <strong>let</strong> and <strong>const</strong> to replace <strong>var</strong>:</p>
+            <ul>
+                <li><strong>var:</strong> Function-scoped, can be re-declared (avoid in modern code)</li>
+                <li><strong>let:</strong> Block-scoped, can be re-assigned but not re-declared</li>
+                <li><strong>const:</strong> Block-scoped, cannot be re-assigned or re-declared</li>
+            </ul>
+
+            <h2>Arrow Functions</h2>
+            <p>Arrow functions provide a concise syntax and bind <strong>this</strong> lexically:</p>
+            <ul>
+                <li>Shorter syntax than traditional functions</li>
+                <li>No need for the function keyword</li>
+                <li>Implicit return for single expressions</li>
+                <li>Don't have their own 'this' context</li>
+            </ul>
+
+            <h2>Template Literals</h2>
+            <p>Template literals use backticks (`) instead of quotes and support string interpolation:</p>
+            <ul>
+                <li>Use ${} to embed expressions</li>
+                <li>Support multi-line strings</li>
+                <li>Make string formatting much cleaner</li>
+            </ul>
+
+            <h2>Destructuring</h2>
+            <p>Destructuring allows you to extract values from arrays or properties from objects:</p>
+            <ul>
+                <li><strong>Array destructuring:</strong> Extract multiple array elements at once</li>
+                <li><strong>Object destructuring:</strong> Extract properties from objects</li>
+                <li>Cleaner and more readable code</li>
+                <li>Can provide default values</li>
+            </ul>
+
+            <h2>Classes</h2>
+            <p>ES6 introduced class syntax for object-oriented programming:</p>
+            <ul>
+                <li>Constructor method for initialization</li>
+                <li>Methods for class functionality</li>
+                <li>Inheritance with extends keyword</li>
+                <li>Super keyword for parent class access</li>
+            </ul>
+
+            <h2>Default Parameters</h2>
+            <p>Functions can now have default parameter values:</p>
+            <ul>
+                <li>Simplifies function definitions</li>
+                <li>No need for manual null/undefined checks</li>
+                <li>Can use expressions as defaults</li>
+                <li>Makes functions more robust</li>
+            </ul>
+
+            <h2>Spread Operator</h2>
+            <p>The spread operator (...) allows iterables to be expanded:</p>
+            <ul>
+                <li>Combine arrays: [...array1, ...array2]</li>
+                <li>Copy arrays: [...array]</li>
+                <li>Pass array elements as function arguments</li>
+                <li>Works with objects too</li>
+            </ul>
+
+            <h2>Promises and Async/Await</h2>
+            <p>ES6 introduced Promises for asynchronous operations:</p>
+            <ul>
+                <li><strong>Promises:</strong> Object representing async operation outcome</li>
+                <li><strong>Async/Await:</strong> Cleaner syntax for promise handling</li>
+                <li>Better error handling with try/catch</li>
+                <li>Prevents callback hell</li>
+            </ul>
+
+            <h2>Modules</h2>
+            <p>ES6 modules allow code organization and reuse:</p>
+            <ul>
+                <li>Export: Share functions, classes, or variables</li>
+                <li>Import: Use exported code from other files</li>
+                <li>Each module has its own scope</li>
+                <li>Improves code organization and maintainability</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>ES6 features have transformed how we write JavaScript. Understanding and using these features will make you a more productive developer and help you write cleaner, more maintainable code.</p>
+
+            <div class="article-navigation">
+                <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

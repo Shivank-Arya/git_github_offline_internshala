@@ -4,22 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        .home-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section {
+            padding: 2rem 0;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>adding content to feature2 branch</h1>
-    <!-- <h3>adding content to main branch</h3> -->
-    <p>adding content to feature1 branch, difference from main branch</p>
-    <p>creating a difference with main branch in feature1</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit, id expedita qui, eligendi iure sapiente accusamus fuga dicta excepturi cumque ut officiis nulla? Aut laboriosam ex vitae repudiandae magnam?</p>
-    <!-- creating conflict with main branch, this is feature1 -->
-     <h3>Lorem ipsum dolor sit amet.</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit, id expedita qui, eligendi iure sapiente
-        accusamus fuga dicta excepturi cumque ut officiis nulla? Aut laboriosam ex vitae repudiandae magnam?</p>
-    <!-- creating conflict with feature1 -->
-    <!-- this is main branch with h2 lorem5 -->
-    <h2>Lorem ipsum dolor sit amet.</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Home</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home-container">
+        <section class="hero">
+            <h1>Welcome to My Website</h1>
+            <p>Sharing knowledge, ideas, and experiences about web development</p>
+            <a href="blog.html" class="cta-button">Explore My Blog</a>
+        </section>
+
+        <section class="content-section">
+            <h2>About Me</h2>
+            <p>I'm passionate about web development and sharing knowledge with others. On this website, you'll find articles covering HTML, CSS, JavaScript, and modern web development practices.</p>
+            <p>Whether you're a beginner just starting your journey or an experienced developer looking to expand your skills, my blog has something for you.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Featured Blog Posts</h2>
+            <p>Check out my latest articles on web development topics:</p>
+            <ul>
+                <li><a href="blog.html">View all blog posts</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
